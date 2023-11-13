@@ -19,7 +19,7 @@ const authOptions = {
           const userExists = await User.findOne({ email });
 
           if (!userExists) {
-            const res = await fetch("https://next-auth-eta-sandy.vercel.app/api/user", {
+            const res = await fetch("https://next-auth-eta-sandy.vercel.app/user", {
               method: "POST",
               headers: {
                 "Content-Type": "application/json",
